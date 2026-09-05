@@ -125,6 +125,12 @@ code { font-family: ui-monospace, "SFMono-Regular", Consolas, monospace; font-si
 mjx-container { max-width: 100%; }
 details { margin: 16px 0; padding: 16px 18px; border: 1px solid var(--border); border-radius: 10px; background: var(--surface); }
 summary { cursor: pointer; font-weight: 720; }
+.trace-card { margin: 30px 0 46px; padding: 22px; border: 1px solid var(--border); border-radius: 14px; background: var(--surface); box-shadow: var(--shadow); }
+.trace-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 18px; }
+.trace-heading h3 { margin-top: 9px; overflow-wrap: anywhere; }
+.score-pill { flex: 0 0 auto; padding: 6px 10px; border-radius: 999px; background: var(--blue-soft); color: var(--blue); font-variant-numeric: tabular-nums; }
+.trace-text { margin-top: 14px; color: var(--muted); font: 13px/1.6 ui-monospace, "SFMono-Regular", Consolas, monospace; }
+.item-meta { color: var(--muted); font-size: 12px; }
 .site-footer { padding: 34px 0 60px; color: var(--muted); font-size: 13px; }
 
 @media (max-width: 850px) {

@@ -13,6 +13,11 @@ python scripts/export_report_data.py \
 python scripts/build_attention_analysis.py
 ```
 
-The published analysis is `attention/normalizing-audio-attention.html`. The
-compact data snapshot and selected raster figures are committed so the page can
-be served as a static GitHub Pages site.
+Published analyses are:
+
+- `attention/normalizing-audio-attention.html`
+- `attention/cot-quality-comparison.html`
+
+The MAPO checkout is the canonical source for the report generators and manual
+audit. This repository mirrors the generated static pages, compact data
+snapshots, selected raster figures, and standalone builders for GitHub Pages.

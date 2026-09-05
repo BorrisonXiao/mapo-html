@@ -204,6 +204,12 @@ def collection_page() -> str:
             <p>Tests the dilution objection against one Qwen transition case and 24 held-out MOSS examples from MMAU, MMAR, and MMSU, then specifies a reviewer-ready plotting protocol.</p>
             <p class="item-meta">5 September 2026 · Mechanistic diagnostic</p>
           </a>
+          <a class="card card-link" href="cot-quality-comparison.html">
+            <span class="tag green">Analysis 02</span>
+            <h3>Are the small audio models’ reasoning traces usable?</h3>
+            <p>Compares MOSS-Audio-4B/8B-Thinking and Audio Flamingo Next Think on the same 24 held-out MMAU, MMAR, and MMSU examples, with a trace-quality audit and modality-retention evidence.</p>
+            <p class="item-meta">5 September 2026 · Model comparison</p>
+          </a>
         </div>
       </div>
     </section>
