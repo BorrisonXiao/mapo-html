@@ -16,13 +16,13 @@
         <a href="../attention/" aria-current="page">Attention analyses</a>
       </div>
     </div>
-  </nav>
+  </nav><nav class="analysis-tabs" aria-label="Attention analysis sub-tabs"><div class="container"><a href="../attention/" aria-current="page">All analyses</a><a href="../attention/normalizing-audio-attention.html">Attention normalization</a><a href="../attention/cot-quality-comparison.html">Reasoning quality</a><a href="../attention/mapo-training-effects.html">MAPO Training Effects</a></div></nav>
   <main>
     <header class="hero">
       <div class="container">
         <p class="eyebrow">Collection</p>
         <h1>Attention analyses</h1>
-        <p class="lede">Controls and case studies for distinguishing ordinary causal-context dilution from an abrupt loss of acoustic routing during generated reasoning.</p>
+        <p class="lede">Controls and case studies for understanding audio use during reasoning, and whether training-induced attention changes improve answer quality.</p>
       </div>
     </header>
     <section class="section">
@@ -30,6 +30,12 @@
         <p class="eyebrow">Available analyses</p>
         <h2>Current items</h2>
         <div class="card-grid">
+          <a class="card card-link" href="mapo-training-effects.html">
+            <span class="tag green">Analysis 03 · Training effects</span>
+            <h3>MAPO Training Effects: Attention, Entropy &amp; Accuracy</h3>
+            <p>Five rank-16 checkpoints change audio attention and confidence substantially, without a reliable accuracy gain. Fixed-token probes and entropy controls separate model movement from better audio reasoning.</p>
+            <p class="item-meta">11 September 2026 · 500-update experiment</p>
+          </a>
           <a class="card card-link" href="normalizing-audio-attention.html">
             <span class="tag green">Analysis 01</span>
             <h3>Should audio attention be normalized for context length?</h3>
