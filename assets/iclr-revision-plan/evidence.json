@@ -1,0 +1,620 @@
+{
+  "date": "2026-09-23",
+  "scope": "Revision planning; no manuscript edits or new model runs",
+  "benchmark_order": [
+    "mmau",
+    "mmar",
+    "mmsu",
+    "mmau-pro"
+  ],
+  "phase2": {
+    "MAPO": {
+      "mmau": {
+        "mean": 77.83333333333333,
+        "sample_sd": 0.25166114784235816,
+        "n": 3
+      },
+      "mmar": {
+        "mean": 70.83333333333333,
+        "sample_sd": 0.20816659994661738,
+        "n": 3
+      },
+      "mmsu": {
+        "mean": 79.35333333333334,
+        "sample_sd": 0.15011106998930124,
+        "n": 3
+      },
+      "mmau-pro": {
+        "mean": 64.97666666666667,
+        "sample_sd": 0.28290163190292145,
+        "n": 3
+      },
+      "macro": {
+        "mean": 73.24916666666667,
+        "sample_sd": 0.09421827494352236,
+        "n": 3
+      }
+    },
+    "GRPO": {
+      "mmau": {
+        "mean": 75.53333333333333,
+        "sample_sd": 0.5507570547286081,
+        "n": 3
+      },
+      "mmar": {
+        "mean": 68.43333333333334,
+        "sample_sd": 0.25166114784235816,
+        "n": 3
+      },
+      "mmsu": {
+        "mean": 76.48,
+        "sample_sd": 0.26457513110646014,
+        "n": 3
+      },
+      "mmau-pro": {
+        "mean": 63.3536450477627,
+        "sample_sd": 0.10370988745489035,
+        "n": 3
+      },
+      "macro": {
+        "mean": 70.95007792860734,
+        "sample_sd": 0.10906336406859922,
+        "n": 3
+      }
+    },
+    "difference": {
+      "mmau": {
+        "mean": 2.2999999999999923,
+        "sample_sd": 0.3999999999999986,
+        "n": 3
+      },
+      "mmar": {
+        "mean": 2.3999999999999964,
+        "sample_sd": 0.2645751311064655,
+        "n": 3
+      },
+      "mmsu": {
+        "mean": 2.873333333333335,
+        "sample_sd": 0.18583146486354984,
+        "n": 3
+      },
+      "mmau-pro": {
+        "mean": 1.623021618903972,
+        "sample_sd": 0.38451599212104565,
+        "n": 3
+      },
+      "macro": {
+        "mean": 2.299088738059325,
+        "sample_sd": 0.12567855272977463,
+        "n": 3
+      }
+    }
+  },
+  "lora": {
+    "mapo_without_attention_lora": {
+      "mmau": {
+        "mean": 75.36666666666666,
+        "sample_sd": 0.3214550253664298,
+        "n": 3
+      },
+      "mmar": {
+        "mean": 67.03333333333333,
+        "sample_sd": 0.15275252316519375,
+        "n": 3
+      },
+      "mmsu": {
+        "mean": 76.54666666666667,
+        "sample_sd": 0.3401960219246117,
+        "n": 3
+      },
+      "mmau-pro": {
+        "mean": 62.88,
+        "sample_sd": 0.3831448812133624,
+        "n": 3
+      },
+      "macro": {
+        "mean": 70.45666666666666,
+        "sample_sd": 0.09569918146637231,
+        "n": 3
+      }
+    },
+    "mapo_with_attention_lora": {
+      "mmau": {
+        "mean": 76.4,
+        "sample_sd": 0.19999999999999574,
+        "n": 3
+      },
+      "mmar": {
+        "mean": 68.4,
+        "sample_sd": 0.26457513110646014,
+        "n": 3
+      },
+      "mmsu": {
+        "mean": 77.27333333333334,
+        "sample_sd": 0.10066445913693742,
+        "n": 3
+      },
+      "mmau-pro": {
+        "mean": 63.5,
+        "sample_sd": 0.03605551275463962,
+        "n": 3
+      },
+      "macro": {
+        "mean": 71.39333333333333,
+        "sample_sd": 0.12540766855871818,
+        "n": 3
+      }
+    }
+  },
+  "phase2_status": "Arithmetic verified from supplied aggregate records; checkpoint/protocol mapping unresolved.",
+  "lora_status": "Actual training/evaluation seed identifiers were not provided. replicate_1 through replicate_3 preserve the collaborator-provided ordering only.",
+  "source_discrepancies": [
+    {
+      "benchmark": "mmar",
+      "seed": 17,
+      "compiled": 68.2,
+      "local_run": 67.2
+    },
+    {
+      "benchmark": "mmar",
+      "seed": 42,
+      "compiled": 68.4,
+      "local_run": 67.4
+    },
+    {
+      "benchmark": "mmar",
+      "seed": 1234,
+      "compiled": 68.7,
+      "local_run": 67.7
+    },
+    {
+      "benchmark": "mmsu",
+      "seed": 17,
+      "compiled": 76.28,
+      "local_run": 74.28
+    },
+    {
+      "benchmark": "mmsu",
+      "seed": 42,
+      "compiled": 76.78,
+      "local_run": 74.78
+    },
+    {
+      "benchmark": "mmsu",
+      "seed": 1234,
+      "compiled": 76.38,
+      "local_run": 74.38
+    }
+  ],
+  "local_grpo_macro": 70.20007792860734,
+  "attention": {
+    "normalized_head_mean": {
+      "examples": 143,
+      "mean": 0.3377531912467157,
+      "bootstrap_ci_95": [
+        0.26013384146770574,
+        0.4202208051535336
+      ],
+      "median": 0.23679669235622494,
+      "negative_count": 35,
+      "positive_count": 108,
+      "direction_count": 108,
+      "direction": "positive"
+    },
+    "normalized_head_max": {
+      "examples": 143,
+      "mean": 0.3138547304935605,
+      "bootstrap_ci_95": [
+        0.15358843938616654,
+        0.46975413492968804
+      ],
+      "median": 0.28140631741127287,
+      "negative_count": 47,
+      "positive_count": 96,
+      "direction_count": 96,
+      "direction": "positive"
+    }
+  },
+  "attention_checks": {
+    "base": {
+      "aligned": 166,
+      "max_recalculation_error": 1.7763568394002505e-15
+    },
+    "mapo": {
+      "aligned": 157,
+      "max_recalculation_error": 4.440892098500626e-15
+    },
+    "paired": 143,
+    "alignment_rule": "first 'Next' token after 20% of response with an evaluation/reasoning/comparison keyword in the next 12 tokens"
+  },
+  "mmsu": {
+    "random_200": {
+      "label": "Random n=200",
+      "n": 200,
+      "conditions": {
+        "text_only": {
+          "models": {
+            "MAPO": {
+              "n": 200,
+              "clean_correct": 136,
+              "clean_accuracy": 0.68,
+              "perturbed_correct": 71,
+              "perturbed_accuracy": 0.355,
+              "accuracy_drop": 0.325,
+              "accuracy_drop_ci95": [
+                0.25,
+                0.4
+              ],
+              "clean_to_wrong": 74,
+              "wrong_to_correct": 9,
+              "answer_change_rate": 0.555
+            },
+            "GRPO Phase 2": {
+              "n": 200,
+              "clean_correct": 120,
+              "clean_accuracy": 0.6,
+              "perturbed_correct": 74,
+              "perturbed_accuracy": 0.37,
+              "accuracy_drop": 0.23,
+              "accuracy_drop_ci95": [
+                0.15,
+                0.31
+              ],
+              "clean_to_wrong": 61,
+              "wrong_to_correct": 15,
+              "answer_change_rate": 0.555
+            }
+          },
+          "comparison": {
+            "difference_in_drops": 0.095,
+            "difference_in_drops_ci95": [
+              0.01,
+              0.175
+            ],
+            "sign_flip_p": 0.037029629703702965
+          }
+        },
+        "silence": {
+          "models": {
+            "MAPO": {
+              "n": 200,
+              "clean_correct": 136,
+              "clean_accuracy": 0.68,
+              "perturbed_correct": 72,
+              "perturbed_accuracy": 0.36,
+              "accuracy_drop": 0.32,
+              "accuracy_drop_ci95": [
+                0.24,
+                0.4
+              ],
+              "clean_to_wrong": 75,
+              "wrong_to_correct": 11,
+              "answer_change_rate": 0.56
+            },
+            "GRPO Phase 2": {
+              "n": 200,
+              "clean_correct": 120,
+              "clean_accuracy": 0.6,
+              "perturbed_correct": 75,
+              "perturbed_accuracy": 0.375,
+              "accuracy_drop": 0.225,
+              "accuracy_drop_ci95": [
+                0.15,
+                0.3
+              ],
+              "clean_to_wrong": 56,
+              "wrong_to_correct": 11,
+              "answer_change_rate": 0.5
+            }
+          },
+          "comparison": {
+            "difference_in_drops": 0.095,
+            "difference_in_drops_ci95": [
+              0.015,
+              0.175
+            ],
+            "sign_flip_p": 0.029249707502924972
+          }
+        },
+        "mismatch": {
+          "models": {
+            "MAPO": {
+              "n": 200,
+              "clean_correct": 136,
+              "clean_accuracy": 0.68,
+              "perturbed_correct": 71,
+              "perturbed_accuracy": 0.355,
+              "accuracy_drop": 0.325,
+              "accuracy_drop_ci95": [
+                0.25,
+                0.4
+              ],
+              "clean_to_wrong": 73,
+              "wrong_to_correct": 8,
+              "answer_change_rate": 0.555
+            },
+            "GRPO Phase 2": {
+              "n": 200,
+              "clean_correct": 120,
+              "clean_accuracy": 0.6,
+              "perturbed_correct": 69,
+              "perturbed_accuracy": 0.345,
+              "accuracy_drop": 0.255,
+              "accuracy_drop_ci95": [
+                0.175,
+                0.33
+              ],
+              "clean_to_wrong": 64,
+              "wrong_to_correct": 13,
+              "answer_change_rate": 0.54
+            }
+          },
+          "comparison": {
+            "difference_in_drops": 0.07,
+            "difference_in_drops_ci95": [
+              -0.015,
+              0.155
+            ],
+            "sign_flip_p": 0.13473865261347387
+          }
+        }
+      }
+    },
+    "shared_clean": {
+      "label": "Shared-clean sensitivity n=107",
+      "n": 107,
+      "conditions": {
+        "text_only": {
+          "models": {
+            "MAPO": {
+              "n": 107,
+              "clean_correct": 107,
+              "clean_accuracy": 1.0,
+              "perturbed_correct": 54,
+              "perturbed_accuracy": 0.5046728971962616,
+              "accuracy_drop": 0.4953271028037383,
+              "accuracy_drop_ci95": [
+                0.40186915887850466,
+                0.5887850467289719
+              ],
+              "clean_to_wrong": 53,
+              "wrong_to_correct": 0,
+              "answer_change_rate": 0.4953271028037383
+            },
+            "GRPO Phase 2": {
+              "n": 107,
+              "clean_correct": 107,
+              "clean_accuracy": 1.0,
+              "perturbed_correct": 58,
+              "perturbed_accuracy": 0.5420560747663551,
+              "accuracy_drop": 0.45794392523364486,
+              "accuracy_drop_ci95": [
+                0.3644859813084112,
+                0.5514018691588785
+              ],
+              "clean_to_wrong": 49,
+              "wrong_to_correct": 0,
+              "answer_change_rate": 0.45794392523364486
+            }
+          },
+          "comparison": {
+            "difference_in_drops": 0.037383177570093455,
+            "difference_in_drops_ci95": [
+              -0.04672897196261682,
+              0.12149532710280374
+            ],
+            "sign_flip_p": 0.5231047689523105
+          }
+        },
+        "silence": {
+          "models": {
+            "MAPO": {
+              "n": 107,
+              "clean_correct": 107,
+              "clean_accuracy": 1.0,
+              "perturbed_correct": 53,
+              "perturbed_accuracy": 0.4953271028037383,
+              "accuracy_drop": 0.5046728971962616,
+              "accuracy_drop_ci95": [
+                0.411214953271028,
+                0.5981308411214953
+              ],
+              "clean_to_wrong": 54,
+              "wrong_to_correct": 0,
+              "answer_change_rate": 0.5046728971962616
+            },
+            "GRPO Phase 2": {
+              "n": 107,
+              "clean_correct": 107,
+              "clean_accuracy": 1.0,
+              "perturbed_correct": 62,
+              "perturbed_accuracy": 0.5794392523364486,
+              "accuracy_drop": 0.4205607476635514,
+              "accuracy_drop_ci95": [
+                0.32710280373831774,
+                0.514018691588785
+              ],
+              "clean_to_wrong": 45,
+              "wrong_to_correct": 0,
+              "answer_change_rate": 0.4205607476635514
+            }
+          },
+          "comparison": {
+            "difference_in_drops": 0.08411214953271028,
+            "difference_in_drops_ci95": [
+              0.0,
+              0.17757009345794392
+            ],
+            "sign_flip_p": 0.0927690723092769
+          }
+        },
+        "mismatch": {
+          "models": {
+            "MAPO": {
+              "n": 107,
+              "clean_correct": 107,
+              "clean_accuracy": 1.0,
+              "perturbed_correct": 56,
+              "perturbed_accuracy": 0.5233644859813084,
+              "accuracy_drop": 0.4766355140186916,
+              "accuracy_drop_ci95": [
+                0.38317757009345793,
+                0.5700934579439252
+              ],
+              "clean_to_wrong": 51,
+              "wrong_to_correct": 0,
+              "answer_change_rate": 0.4766355140186916
+            },
+            "GRPO Phase 2": {
+              "n": 107,
+              "clean_correct": 107,
+              "clean_accuracy": 1.0,
+              "perturbed_correct": 56,
+              "perturbed_accuracy": 0.5233644859813084,
+              "accuracy_drop": 0.4766355140186916,
+              "accuracy_drop_ci95": [
+                0.38317757009345793,
+                0.5700934579439252
+              ],
+              "clean_to_wrong": 51,
+              "wrong_to_correct": 0,
+              "answer_change_rate": 0.4766355140186916
+            }
+          },
+          "comparison": {
+            "difference_in_drops": 0.0,
+            "difference_in_drops_ci95": [
+              -0.08411214953271028,
+              0.08411214953271028
+            ],
+            "sign_flip_p": 1.0
+          }
+        }
+      }
+    }
+  },
+  "mmsu_statistics": {
+    "bootstrap_reps": 20000,
+    "sign_flip_reps": 100000,
+    "seed": 42
+  },
+  "mmsu_checks": {
+    "silence": {
+      "positive_item_contrasts": 42,
+      "negative_item_contrasts": 24,
+      "zero_item_contrasts": 134
+    },
+    "mismatch": {
+      "positive_item_contrasts": 38,
+      "negative_item_contrasts": 26,
+      "zero_item_contrasts": 136
+    },
+    "text_only": {
+      "positive_item_contrasts": 44,
+      "negative_item_contrasts": 25,
+      "zero_item_contrasts": 131
+    }
+  },
+  "entropy_correlation": {
+    "n_examples": 40,
+    "n_tokens": 17592,
+    "rho_absolute_position_adjusted": {
+      "bootstrap_95_ci": [
+        -0.07489932586630083,
+        0.0018132982500503262
+      ],
+      "cluster_sign_flip_p_two_sided": 0.06989930100698993,
+      "fraction_positive": 0.3,
+      "mean": -0.03764583376966892,
+      "median": -0.04359663231816664,
+      "n_examples": 40,
+      "sample_std": 0.12796298904476444
+    },
+    "rho_absolute_raw": {
+      "bootstrap_95_ci": [
+        0.023713220371920335,
+        0.1401680653727113
+      ],
+      "cluster_sign_flip_p_two_sided": 0.011389886101138988,
+      "fraction_positive": 0.625,
+      "mean": 0.0794953754743434,
+      "median": 0.03617997124347705,
+      "n_examples": 40,
+      "sample_std": 0.1907863860833344
+    },
+    "rho_signed_position_adjusted": {
+      "bootstrap_95_ci": [
+        -0.07139118824274497,
+        0.01609069342480743
+      ],
+      "cluster_sign_flip_p_two_sided": 0.2188778112218878,
+      "fraction_positive": 0.35,
+      "mean": -0.028908536366793303,
+      "median": -0.0615297446864675,
+      "n_examples": 40,
+      "sample_std": 0.14550609260662084
+    },
+    "rho_signed_raw": {
+      "bootstrap_95_ci": [
+        -0.021630130782967657,
+        0.1057746354989585
+      ],
+      "cluster_sign_flip_p_two_sided": 0.25215747842521574,
+      "fraction_positive": 0.5,
+      "mean": 0.03884432121977613,
+      "median": -0.004018152483060505,
+      "n_examples": 40,
+      "sample_std": 0.2083297631586501
+    }
+  },
+  "sources": [
+    {
+      "path": "mapo/paper/revisions/neurips-content-iclr/manuscript.tex",
+      "sha256": "fab765e7acd1df0f71f20ad8053307e28310edc9d40509a693c49e58c263de27"
+    },
+    {
+      "path": "mapo/paper/revisions/rebuttal-integrated/manuscript.tex",
+      "sha256": "daa44ce3759f0f9833b2e204db1275475f34291b1fd73edaff87c7305948100f"
+    },
+    {
+      "path": "mapo-release/rebuttal/neurips/compiled_evidence/seeded_benchmark_eval_per_seed.json",
+      "sha256": "ad251152d496845f5dd05fc8c63f64e0c1a36889be31191cb66f13e5d874d603"
+    },
+    {
+      "path": "mapo-release/rebuttal/neurips/compiled_evidence/lora_attention_branch_multiseed_input.json",
+      "sha256": "cdcf27e2881aa02be378308feee584c7efc005f127b75cefa3f647107fc7e547"
+    },
+    {
+      "path": "mapo-release/exp/grpo_phase2/results/summary.json",
+      "sha256": "05de8928403292ae397c89432a31b45cffc91d568c65859f443f27deae062cde"
+    },
+    {
+      "path": "mapo-release/rebuttal/exp/normalized_attention/stage_transition_audit/paired_stage_summary.json",
+      "sha256": "a9e38a62bf1db85e5dddd1e8869a9b2d4bc57a83dba713dc8c7cc0073362fd5b"
+    },
+    {
+      "path": "mapo-release/exp/mmsu_random_grounding/results/summary/summary.json",
+      "sha256": "6d4a85349bbbc9f0f5b0e3cc85f166582be549303babc6a537c0e2e6b3d834fc"
+    },
+    {
+      "path": "mapo-release/rebuttal/exp/diff_entropy_attention_correlation/summary.json",
+      "sha256": "6c95f0b72a3381e17583f56af96d99b5c56f2354ea6fdee7ba94565e6e351409"
+    },
+    {
+      "path": "mapo-release/exp/mmsu_random_grounding/results/mapo/qwen3-omni.normalized.json",
+      "sha256": "486d0664f321e892d0b9c5d0ab200f565e4bd28474acd165dc2595f7d608b296"
+    },
+    {
+      "path": "mapo-release/exp/mmsu_random_grounding/results/grpo-phase2/qwen3-omni.normalized.json",
+      "sha256": "c5ed30c6d382329b85bb61258fd55942db28702fcc879fa6f336f077ca799828"
+    }
+  ],
+  "verification": {
+    "phase2_means_and_sample_sds": "recomputed",
+    "stage_changes": "recomputed from saved trajectories; transition indices reused",
+    "mmsu_counts_and_paired_effects": "recomputed from all 1600 normalized predictions",
+    "entropy_correlations": "means recomputed from 40 per-example correlation records",
+    "confidence_intervals": "existing primary-summary bootstrap intervals; resampling code inspected",
+    "not_repeated": "GPU inference, training, answer parsing, lexical transition detection, bootstrap sampling"
+  }
+}

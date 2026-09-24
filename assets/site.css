@@ -62,7 +62,7 @@ a:hover { text-decoration-thickness: 2px; }
   gap: 24px;
 }
 .brand { margin-right: auto; color: var(--text); font-weight: 730; letter-spacing: -0.02em; text-decoration: none; }
-.nav-links { display: flex; gap: 20px; }
+.nav-links { display: flex; flex-wrap: wrap; gap: 20px; }
 .nav-links a { color: var(--muted); font-size: 14px; text-decoration: none; }
 .nav-links a:hover, .nav-links a[aria-current="page"] { color: var(--text); }
 .analysis-tabs { border-bottom: 1px solid var(--border); background: var(--surface); }
